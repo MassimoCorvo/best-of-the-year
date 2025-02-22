@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <title>Home</title>
-    </head>
 
-    <body>
+<head>
+    <title>Home</title>
+    <div th:insert="~{fragments/fragments :: bootstrap}"></div>
+</head>
+
+<body>
+    <div th:replace="~{fragments/fragments :: navbar}"></div>
+    <div id="main-container" class="container-md d-flex flex-column align-items-center justify-content-center">
         <h1>Best of the year by [[${name}]]</h1>
-    </body>
+        <img th:src="@{image.jpg}" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit totam deserunt sed vitae natus doloribus
+            praesentium voluptas perferendis mollitia, minus delectus cupiditate voluptates sit eius et, dicta,
+            reprehenderit laborum accusantium.</p>
+    </div>
+</body>
+
 </html>

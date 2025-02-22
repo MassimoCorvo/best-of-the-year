@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <title>Songs</title>
-    </head>
 
-    <body>
+<head>
+    <title>Songs</title>
+    <div th:insert="~{fragments/fragments :: bootstrap}"></div>
+</head>
+
+<body>
+    <div th:replace="~{fragments/fragments :: navbar}"></div>
+    <div class="container-md d-flex flex-column align-items-center justify-content-center main-container">
+        <h1>Best Songs</h1>
         <ul>
-            <li th:each="song : ${songs}" th:text="${song}"></li>
+            <li th:each="song : ${songs}"><a th:href="@{/songs/{songId}(songId=${song.id})}" th:text="${song}"></a></li>
         </ul>
-    </body>
+    </div>
+</body>
+
 </html>

@@ -22,7 +22,7 @@ public class Movie implements Serializable{
     }
 
     public String getTitolo() {
-        return titolo;
+        return this.titolo;
     }
 
     public void setTitolo(String titolo) {

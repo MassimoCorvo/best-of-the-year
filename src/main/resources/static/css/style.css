@@ -1,0 +1,28 @@
+.navbar{
+    height: 5vh;
+}
+
+.main-container{
+    width: 60%;
+    height: 95vh;
+    font-size: large;
+}
+
+img{
+    width: inherit;
+}
+
+p{
+    width: inherit;
+}
+
+ul{
+     border: 2px solid black;
+     list-style-type: none;
+     text-align: center;
+     padding: 10px 40px;
+}
+
+li{
+    margin-bottom: 10px;
+}

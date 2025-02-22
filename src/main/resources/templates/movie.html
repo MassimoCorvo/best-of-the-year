@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
     <head>
-        <title>[[${movie.getTitolo()}]]</title>
+        <title>[[${movie.titolo}]]</title>
+        <div th:insert="~{fragments/fragments :: bootstrap}"></div>
     </head>
 
     <body>
-        <p>[[${movie.getTitolo()}]]</p>
+        <div th:replace="~{fragments/fragments :: navbar}"></div>
+        <div th:replace="~{fragments/fragments :: movies-container}">
+        
+        </div>
     </body>
 </html>

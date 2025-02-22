@@ -75,12 +75,12 @@ public class HomeController {
         for (Movie movie : moviesList) {
             if( id.equals(movie.getId())){
                 movieFound = movie;
+                break;
             }
         }
 
 
         model.addAttribute("movie", movieFound);
-
         return "movie";
      }
 
@@ -93,6 +93,7 @@ public class HomeController {
         for (Song song : songsList) {
             if( id.equals(song.getId())){
                 songFound = song;
+                break;
             }
         }
 
