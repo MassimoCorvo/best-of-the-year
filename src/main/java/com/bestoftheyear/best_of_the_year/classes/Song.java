@@ -28,4 +28,9 @@ public class Song implements Serializable{
     public void setTitolo(String titolo) {
         this.titolo = titolo;
     }
+
+    @Override
+    public String toString(){
+        return this.titolo;
+    }
 }
